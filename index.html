@@ -16,30 +16,32 @@
 </head>
 
 <body>
-
+<!--introduction .jpg-->
 <div class="header-banner">
    <div class="header-data-info"></div>
 </div>
+<!--These are all the buttons below the introduction jpg-->
 <a href="#Background" class="button gray">Background</a>
 <a href="#Epidemic1" class="button gray">Epidemic Map - China</a>
 <a href="#Epidemic2" class="button gray">Epidemic Trajectory - China</a>
 <a href="#Table1" class="button gray">Statistics - China</a>
 <a href="#Epidemic3" class="button gray">Epidemic Map - USA</a>
 <a href="https://www.cdc.gov/" class="button gray">USA CDC website</a>
-<a href="https://coronavirus.jhu.edu/map.html" class="button gray">JHU Statistics</a>
-
+<a href="https://coronavirus.jhu.edu/map.html" class="button gray">JHU Statistics</a>   
+<!--end button-->
+    
       <div class="content">
-          <!--疫情简介 新闻片段1234-->
+<!--Background, including introduction, news from social media-->
            <div class="todaydata">
                <span class="today-title" >
                  <a name="Background"></a>
-                 <br />COVID-19 Background <!--br是加一行空格-->
+                 <br />COVID-19 Background <!--br: adding 空行-->
                </span>
                <span class="today-time" style="line-height: 0px;">Source: Social Media </span>
            </div>
            <div class="todaydata">
               </div>
-              <!--新闻片段1-->
+<!--Background, 1-->
               <div class="timelineblock">
                   <div class="timeLine"></div>
                   <div class="singleNew">
@@ -51,7 +53,7 @@
                       </div>
                   </div>
                     <div class="timeLine"></div>
-                    <!--新闻片段2，并且延续了time line，3同-->
+<!--news2-->
                   <div class="singleNew">
                       <div class="timeIcon"></div>
                       <div class="times"><span class="pass">01/20/2020</span><div class="newest"></div></div>
@@ -59,7 +61,7 @@
                           <div class="source">Source: Shanghai Observer</div>
                       </div>
                   </div>
-                    <!--新闻片段3-->
+<!--news3 shut down Wuhan city-->
                   <div class="singleNew">
                       <div class="timeIcon"></div>
                       <div class="times"><span class="pass">01/23/2020</span><div class="newest"></div></div>
@@ -67,7 +69,7 @@
                           <div class="source">Source: Xinhua News</div>
                       </div>
                   </div>
-                    <!--新闻片段4-->
+<!--news4, the satus quo in the us until 03/21/2020-->
                   <div class="singleNew">
                       <div class="timeIcon"></div>
                       <div class="times"><span class="pass">03/21/2020</span><div class="newest"></div></div>
@@ -79,7 +81,7 @@
 </body>
 
 <body>
-<!--中国疫情简介 大标题-->
+<!--Epidemic Map - China, title-->
     <div class="todaydata">
       <a name="Epidemic1"></a>
         <span class="today-title">
@@ -89,7 +91,7 @@
         <span class="today-time" style="line-height: 0px;">Source: the National Health Commission of the People's Republic of China (NHCPRC)</span>
         <span class="today-time">Last updated：2020-03-20 07:00 UTC/GMT+08:00</span>
     </div>
-<!--总确诊 死亡 治愈 数字-->
+<!--total confirmed cases, cured, and dead ones-->
     <div class="recentNumber">
         <div class="icbar currConfirm">
             <div class="number">81,264</div>
@@ -106,13 +108,13 @@
     </div>
 </body>
 
-<!--开始绘制中国疫情地图, 引入另一张图-->
+<!--Start to map out the epidemic situ in China, and iframe another map that made eariler-->
 <iframe src="https://yy2905.github.io/final_pj_backup1"
         width="100%" height="700px" margin="50px">
 </iframe>
-
+<!--end iframe-->
 <body>
-<!--疫情趋势，从一月19开始的-->
+<!--trend, in china, from 01/19/2020, title-->
     <a name="Epidemic2"></a>
     <div class="todaydata">
         <span class="today-title">
@@ -123,8 +125,7 @@
         <span class="today-time">Last updated：2020-03-20 07:00 UTC/GMT+08:00</span>
     </div>
 
-
-<!--加一个线图-->
+<!--trend, in china, from 01/19/2020, graph-->
 <head>
     <meta charset="utf-8"><link rel="icon" href="https://jscdn.com.cn/highcharts/images/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -140,9 +141,8 @@
   <script src='./js/script.js'></script>
 
 </body>
-
-
-<!--加各个省份数据统计-->
+    
+<!--adding specific data from each province in china, 03/20/2020-->
 <body>
     <div class="todaydata">
         <span class="today-title">
@@ -155,6 +155,7 @@
     </div>
   <!--<div id="stats-container" style="min-width:300px;height:600px"></div>-->
   <style src="./css/style.css"></style>
+  <!--adding a table, reference: https://cnzhx.net/dl/source/141/index.html-->
   <table id="one-column-emphasis">
       <colgroup>
        <col class="oce-first" />
@@ -410,9 +411,8 @@
       </tbody>
   </table>
 
-  <!--开始绘制美国疫情地图, 引入另一张图-->
+  <!--Adding US map, title-->
   <body>
-  <!--中国疫情简介 大标题-->
       <div class="todaydata">
         <a name="Epidemic3"></a>
           <span class="today-title">
@@ -423,7 +423,7 @@
           <span class="today-time">Last updated：2020-03-22 10:00 UTC/GMT+08:00</span>
       </div>
 
-
+  <!--Adding US map, iframe-->
   <iframe src="https://yy2905.github.io/final_pj_backup2"
           width="100%" height="700px" margin="50px">
   </iframe>
