@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title> COVID-19 Pandemic Real-time Report 03/19/2020</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <meta name="MSSmartTagsPreventParsing" content="True" />
+    <meta property="og:image" content="https://coronavirus.1point3acres.com/images/feiyan.jpeg" />
+    <meta property="og:image:alt" content="Coronavirus" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="600" />
+    <!--<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script> -->
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
+    <link href='./css/style.css' rel='stylesheet' />
+
+</head>
+
+<body>
+
+<div class="header-banner">
+   <div class="header-data-info"></div>
+</div>
+<a href="#Background" class="button gray">Background</a>
+<a href="#Epidemic1" class="button gray">Epidemic Map - China</a>
+<a href="#Epidemic2" class="button gray">Epidemic Trajectory - China</a>
+<a href="#Table1" class="button gray">Statistics - China</a>
+<a href="#Epidemic3" class="button gray">Epidemic Map - USA</a>
+<a href="https://www.cdc.gov/" class="button gray">USA CDC website</a>
+<a href="https://coronavirus.jhu.edu/map.html" class="button gray">JHU Statistics</a>
+
+      <div class="content">
+          <!--疫情简介 新闻片段1234-->
+           <div class="todaydata">
+               <span class="today-title" >
+                 <a name="Background"></a>
+                 <br />COVID-19 Background <!--br是加一行空格-->
+               </span>
+               <span class="today-time" style="line-height: 0px;">Source: Social Media </span>
+           </div>
+           <div class="todaydata">
+              </div>
+              <!--新闻片段1-->
+              <div class="timelineblock">
+                  <div class="timeLine"></div>
+                  <div class="singleNew">
+                      <div class="timeIcon"></div>
+                      <div class="times"><span class="pass">Introduction</span><div class="newest"></div></div>
+                      <div class="news-box">
+                          <div class="desc">COVID-19, formerly known as 2019-nCoV disease, is an infectious disease happened in Wuhan, capital city of Hubei province, P.R.China in December 2019. With the first case confirmed on December 1st, 2019, over 110,000 people have been infected among 114 countries and regions. Thousands of people are fighting Death in the hospital. The number of confirmed cases, deaths and affected countries or regions are expected to climb further in the coming weeks. To get more information, you can click the USA CDC and Johns Hopkins buttons above. </div>
+                          <div class="source">Source: UN News</div>
+                      </div>
+                  </div>
+                    <div class="timeLine"></div>
+                    <!--新闻片段2，并且延续了time line，3同-->
+                  <div class="singleNew">
+                      <div class="timeIcon"></div>
+                      <div class="times"><span class="pass">01/20/2020</span><div class="newest"></div></div>
+                      <div class="news-box"><div class="desc">A 35-year-old man who lives in Seattle, Washington was tested positive for COVID-19. On January 16, the man began to develop symptoms; on January 19, the man was admitted to a local clinic for treatment. He is the first case in the U.S.</div>
+                          <div class="source">Source: Shanghai Observer</div>
+                      </div>
+                  </div>
+                    <!--新闻片段3-->
+                  <div class="singleNew">
+                      <div class="timeIcon"></div>
+                      <div class="times"><span class="pass">01/23/2020</span><div class="newest"></div></div>
+                      <div class="news-box"><div class="desc">China central governemnt decides to lockdown Wuhan city, and will shut down the whole province in the following days to aviod the further spread of this new corona virus.</div>
+                          <div class="source">Source: Xinhua News</div>
+                      </div>
+                  </div>
+                    <!--新闻片段4-->
+                  <div class="singleNew">
+                      <div class="timeIcon"></div>
+                      <div class="times"><span class="pass">03/21/2020</span><div class="newest"></div></div>
+                      <div class="news-box"><div class="desc">Until March 21, 2020, US has 31,191 total confirmed cases, and 390 people have died from it.</div>
+                          <div class="source">Source: Coronavirus Resource Center, Johns Hopkins University Medicine</div>
+                      </div>
+                  </div>
+<div class="content">
+</body>
+
+<body>
+<!--中国疫情简介 大标题-->
+    <div class="todaydata">
+      <a name="Epidemic1"></a>
+        <span class="today-title">
+          <br />
+          Epidemic Map - China
+        </span>
+        <span class="today-time" style="line-height: 0px;">Source: the National Health Commission of the People's Republic of China (NHCPRC)</span>
+        <span class="today-time">Last updated：2020-03-20 07:00 UTC/GMT+08:00</span>
+    </div>
+<!--总确诊 死亡 治愈 数字-->
+    <div class="recentNumber">
+        <div class="icbar currConfirm">
+            <div class="number">81,264</div>
+            <div class="text">Total Confirmed</div>
+        </div>
+        <div class="icbar dead">
+            <div class="number">3,250</div>
+            <div class="text">Dead</div>
+        </div>
+        <div class="icbar cure">
+            <div class="number">70,561</div>
+            <div class="text">Cured</div>
+        </div>
+    </div>
+</body>
+
+<!--开始绘制中国疫情地图, 引入另一张图-->
+<iframe src="https://yy2905.github.io/final_pj_backup1"
+        width="100%" height="700px" margin="50px">
+</iframe>
+
+<body>
+<!--疫情趋势，从一月19开始的-->
+    <a name="Epidemic2"></a>
+    <div class="todaydata">
+        <span class="today-title">
+          <br />
+          Epidemic Trajectory since January 19, 2020
+        </span>
+        <span class="today-time" style="line-height: 0px;">Source: NHCPRC, Chixiang, Dingxiang Doctor, Baidu</span>
+        <span class="today-time">Last updated：2020-03-20 07:00 UTC/GMT+08:00</span>
+    </div>
+
+
+<!--加一个线图-->
+<head>
+    <meta charset="utf-8"><link rel="icon" href="https://jscdn.com.cn/highcharts/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://code.highcharts.com.cn/highcharts/highcharts.js"></script>
+    <script src="https://code.highcharts.com.cn/highcharts/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com.cn/highcharts/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com.cn/highcharts/modules/oldie.js"></script>
+    <script src="https://code.highcharts.com.cn/highcharts-plugins/highcharts-zh_CN.js"></script>
+</head>
+<body>
+  <div id="tra-container" style="min-width:300px;height:600px"></div>
+  <script src='./js/script.js'></script>
+
+</body>
+
+
+<!--加各个省份数据统计-->
+<body>
+    <div class="todaydata">
+        <span class="today-title">
+          <a name="Table1"></a>
+          <br />
+          Statistics reported in each province
+        </span>
+        <span class="today-time" style="line-height: 0px;">Source: NHCPRC, Dingxiang Doctor</span>
+        <span class="today-time">Last updated：2020-03-20 07:00 UTC/GMT+08:00</span>
+    </div>
+  <!--<div id="stats-container" style="min-width:300px;height:600px"></div>-->
+  <style src="./css/style.css"></style>
+  <table id="one-column-emphasis">
+      <colgroup>
+       <col class="oce-first" />
+      </colgroup>
+      <thead>
+       <tr>
+           <th scope="col">Province</th>
+              <th scope="col">Active Cases</th>
+              <th scope="col">Total confirmed</th>
+              <th scope="col">Total Deaths</th>
+              <th scope="col">Total Recovered</th>
+          </tr>
+      </thead>
+      <tbody>
+       <tr>
+           <td>Hubei</td>
+              <td>5,719</td>
+              <td>67,800</td>
+              <td>3,139</td>
+              <td>58,942</td>
+          </tr>
+          <tr>
+           <td>Hong Kong</td>
+              <td>154</td>
+              <td>256</td>
+              <td>4</td>
+              <td>98</td>
+          </tr>
+          <tr>
+           <td>Taiwan</td>
+              <td>105</td>
+              <td>135</td>
+              <td>2</td>
+              <td>28</td>
+          </tr>
+          <tr>
+           <td>Beijing</td>
+              <td>99</td>
+              <td>499</td>
+              <td>8</td>
+              <td>392</td>
+          </tr>
+          <tr>
+           <td>Guangdong</td>
+              <td>66</td>
+              <td>1,399</td>
+              <td>8</td>
+              <td>1,325</td>
+          </tr>
+          <tr>
+           <td>Shanghai</td>
+              <td>51</td>
+              <td>380</td>
+              <td>3</td>
+              <td>326</td>
+          </tr>
+          <tr>
+           <td>Gansu</td>
+              <td>19</td>
+              <td>134</td>
+              <td>2</td>
+              <td>113</td>
+          </tr>
+          <tr>
+           <td>Zhejiang</td>
+              <td>16</td>
+              <td>1,236</td>
+              <td>1</td>
+              <td>1,219</td>
+          </tr>
+          <tr>
+           <td>Shandong</td>
+              <td>8</td>
+              <td>764</td>
+              <td>7</td>
+              <td>749</td>
+          </tr>
+          <tr>
+           <td>Heilongjiang</td>
+              <td>8</td>
+              <td>484</td>
+              <td>13</td>
+              <td>463</td>
+          </tr>
+          <tr>
+           <td>Fujian</td>
+              <td>7</td>
+              <td>303</td>
+              <td>1</td>
+              <td>295</td>
+          </tr>
+          <tr>
+           <td>Macao</td>
+              <td>7</td>
+              <td>17</td>
+              <td>0</td>
+              <td>10</td>
+          </tr>
+          <tr>
+           <td>Shaanxi</td>
+              <td>6</td>
+              <td>248</td>
+              <td>3</td>
+              <td>239</td>
+          </tr>
+          <tr>
+           <td>Sichuan</td>
+              <td>3</td>
+              <td>542</td>
+              <td>3</td>
+              <td>536</td>
+          </tr>
+          <tr>
+           <td>Heibei</td>
+              <td>2</td>
+              <td>318</td>
+              <td>6</td>
+              <td>310</td>
+          </tr>
+          <tr>
+           <td>Guangxi</td>
+              <td>2</td>
+              <td>254</td>
+              <td>2</td>
+              <td>250</td>
+          </tr>
+          <tr>
+           <td>Yunnan</td>
+              <td>2</td>
+              <td>176</td>
+              <td>2</td>
+              <td>172</td>
+          </tr>
+          <tr>
+            <td>Liaoning</td>
+              <td>2</td>
+              <td>126</td>
+              <td>2</td>
+              <td>122</td>
+          </tr>
+          <tr>
+            <td>Henan</td>
+              <td>1</td>
+              <td>1,273</td>
+              <td>22</td>
+              <td>1,250</td>
+          </tr>
+          <tr>
+            <td>Hainan</td>
+              <td>1</td>
+              <td>168</td>
+              <td>6</td>
+              <td>161</td>
+          </tr>
+          <tr>
+            <td>Tianjin</td>
+              <td>1</td>
+              <td>137</td>
+              <td>3</td>
+              <td>133</td>
+          </tr>
+          <tr>
+            <td>Hunan</td>
+              <td>0</td>
+              <td>1,018</td>
+              <td>4</td>
+              <td>1,014</td>
+          </tr>
+          <tr>
+            <td>Anhui</td>
+              <td>0</td>
+              <td>990</td>
+              <td>6</td>
+              <td>984</td>
+          </tr>
+          <tr>
+            <td>Jiangxi</td>
+              <td>0</td>
+              <td>935</td>
+              <td>1</td>
+              <td>934</td>
+          </tr>
+          <tr>
+            <td>Jiangsu</td>
+              <td>0</td>
+              <td>631</td>
+              <td>0</td>
+              <td>631</td>
+          </tr>
+          <tr>
+            <td>Chongqing</td>
+              <td>0</td>
+              <td>576</td>
+              <td>6</td>
+              <td>570</td>
+          </tr>
+          <tr>
+            <td>Guizhou</td>
+              <td>0</td>
+              <td>146</td>
+              <td>2</td>
+              <td>144</td>
+          </tr>
+          <tr>
+            <td>Shanxi</td>
+              <td>0</td>
+              <td>133</td>
+              <td>0</td>
+              <td>133</td>
+          </tr>
+          <tr>
+            <td>Jilin</td>
+              <td>0</td>
+              <td>93</td>
+              <td>1</td>
+              <td>92</td>
+          </tr>
+          <tr>
+            <td>Xinjiang</td>
+              <td>0</td>
+              <td>76</td>
+              <td>3</td>
+              <td>73</td>
+          </tr>
+          <tr>
+            <td>Ningxia</td>
+              <td>0</td>
+              <td>75</td>
+              <td>0</td>
+              <td>75</td>
+          </tr>
+          <tr>
+            <td>Inner Mongolia</td>
+              <td>0</td>
+              <td>75</td>
+              <td>1</td>
+              <td>74</td>
+          </tr>
+          <tr>
+            <td>Qinghai</td>
+              <td>0</td>
+              <td>18</td>
+              <td>0</td>
+              <td>18</td>
+          </tr>
+          <tr>
+            <td>Tibet</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>1</td>
+          </tr>
+      </tbody>
+  </table>
+
+  <!--开始绘制美国疫情地图, 引入另一张图-->
+  <body>
+  <!--中国疫情简介 大标题-->
+      <div class="todaydata">
+        <a name="Epidemic3"></a>
+          <span class="today-title">
+            <br />
+            Epidemic Map - USA
+          </span>
+          <span class="today-time" style="line-height: 0px;">Source: the National Health Commission of the People's Republic of China (NHCPRC)</span>
+          <span class="today-time">Last updated：2020-03-22 10:00 UTC/GMT+08:00</span>
+      </div>
+
+
+  <iframe src="https://yy2905.github.io/final_pj_backup2"
+          width="100%" height="700px" margin="50px">
+  </iframe>
+
+  <body>
+
+</body>
+
+</body>
+
+</html>
+
